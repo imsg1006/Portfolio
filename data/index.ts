@@ -1,8 +1,8 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
+    { name: "Experience", link: "#experience" },
+    { name: "Contact", link: "#footer" },
   ];
   
   export const gridItems = [
@@ -31,7 +31,7 @@ export const navItems = [
       id: 3,
       title: "My tech stack",
       description: "I constantly try to improve",
-      className: "lg:col-span-1 md:col-span-2 w-[50vh] justify-center md:row-span-1",
+      className: "lg:col-span-1 md:col-span-2 w-[90vh] justify-center md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-center",
       img: "",
@@ -41,23 +41,14 @@ export const navItems = [
       id: 4,
       title: "Tech enthusiast with a passion for development.",
       description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+      className: " flex flex-col w-[35vw] justify-between lg:ml-60  items-end h-full  ",
       imgClassName: "",
       titleClassName: "justify-start",
       img: "/grid.svg",
       spareImg: "/b4.svg",
     },
   
-    // {
-    //   id: 5,
-    //   title: "Currently building a JS Animation library",
-    //   description: "The Inside Scoop",
-    //   className: "md:col-span-3 md:row-span-2",
-    //   imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    //   titleClassName: "justify-center md:justify-start lg:justify-center",
-    //   img: "/b5.svg",
-    //   spareImg: "/grid.svg",
-    // },
+     
     {
       id: 6,
       title: "Do you want to start a project together?",
@@ -72,10 +63,10 @@ export const navItems = [
   id: 7,
   title: "View My Resume",
   description: "Download or view my latest resume.",
-  className: "flex flex-col justify-between  items-center h-full",
+  className: "flex flex-col lg:col-span-1 md:col-span-2 md:row-span-1 justify-between  items-center h-full",
   imgClassName: "",
   titleClassName: "justify-center",
-  img: "", // Optionally add a resume icon/image here
+  img: "",  
   spareImg: "",
   resumeLink: "/SHLOK_CV",  
 },
@@ -84,70 +75,39 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "ThinkTweet",
-      des: "powerful Twitter bot that uses MCP to generate tweets based on user input.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg",   "/fm.svg"],
-      link: "https://github.com/imsg1006/ThinkTweet",
+      title: "Findly : Image & WebSearch powered by MCP",
+      des: "A smart search platform that generates web results and images using MCP servers.",
+      img: "/findly.png",
+      iconLists: ["/re.svg","/mcp.png", "/tail.svg", "/python.png",   "/fastapi.jpg", "/aceter.png"],
+      link: "https://findly-10.onrender.com/",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      title: "FastTales : An AI-powered story generator that creates engaging tales based on chosen themes.",
+      des: "An AI-powered story generator that creates engaging tales based on chosen themes.",
+      img: "/fasttales.png",
+      iconLists: ["/re.svg", "/tail.svg",  "/js.jpg", "/python.png",   "/fastapi.jpg", "/aceter.png", "/gem.jpg"],
+      link: "https://2490bbb6-8215-4fd2-833b-671300f9c390.e1-us-east-azure.choreoapps.dev//",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      title: " AuraFix : An image enhancer AI tool",
+      des: "An AI tool designed to enhance and improve image quality.",
+      img: "/aurafix.png",
+      iconLists: ["/re.svg", "/tail.svg", "/js.jpg", "/aceter.png", "/pw.png"],
+      link: "https://aura-fix.vercel.app/",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      title: "CricVista : The Tricolor of Cricketing Passion.",
+      des: "CricVista brings fans closer to the Indian cricket team using GSAP and Aceternity UI.",
       img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "/js.jpg", "/aceter.png", "/gsap.svg"],
       link: "https://github.com/adrianhajdin/iphone",
     },
   ];
   
-  export const testimonials = [
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-  ];
+   
   
   export const companies = [
     {
@@ -185,45 +145,13 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
+      company:'ReelKart',
+      date:"November 2023 - March 2024",
       title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      desc: "I contributed as a Frontend Developer Intern at Reelkart, building responsive user interfaces and enhancing web application performance..",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
-    },
-    {
-      id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
-    },
-    {
-      id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
-      className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
-    },
+    } 
   ];
   
-  export const socialMedia = [
-    {
-      id: 1,
-      img: "/git.svg",
-    },
-    {
-      id: 2,
-      img: "/twit.svg",
-    },
-    {
-      id: 3,
-      img: "/link.svg",
-    },
-  ];
+  

@@ -5,11 +5,10 @@ import {
   AnimatePresence,
   useScroll,
   useMotionValueEvent,
-  None,
+   
 } from "motion/react";
 import { cn } from "@/utils/cn";
-import Link from "next/link";
-import { list } from "postcss";
+import Link from "next/link"; 
 
 export const FloatingNav = ({
   navItems,

@@ -1,7 +1,9 @@
+"use client"
 import React from "react";
-import { FloatingDock } from "./FloatingDock";
+import { FloatingDock } from "./floating-dock";
 import {
   IconBrandGithub,
+  IconBrandLinkedin,
   IconBrandX,
   IconExchange,
   IconHome,
@@ -20,38 +22,14 @@ export function FloatingDockDemo() {
       href: "#",
     },
 
+     
+     
     {
-      title: "Products",
+      title: "Linkdin",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
-    },
-    {
-      title: "Components",
-      icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Aceternity UI",
-      icon: (
-        <Image
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
-      ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "https://www.linkedin.com/in/shlokgupta1006/",
     },
 
     {
@@ -59,18 +37,18 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://x.com/shlok10xDev",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/imsg1006",
     },
   ];
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="flex items-center justify-center h-[20rem] w-full">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}

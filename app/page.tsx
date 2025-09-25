@@ -3,8 +3,8 @@ import { FloatingNav } from "@/components/ui/FloatingNav"
 import Grid from "@/components/Grid"
 import { navItems } from "@/data"
 import Experience from "@/components/Experience"
-import RecentProjects from "@/components/RecentProjects"
-import Approach from "@/components/Approach"
+import RecentProjects from "@/components/RecentProjects" 
+import Footer from "@/components/Footer"
 export default function Home() {
   return (
     <main className="relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
@@ -14,9 +14,10 @@ export default function Home() {
       />
          <Hero />
          <Grid/>
-         <RecentProjects/>
-         {/* <Experience/> */}
-         <Approach/>
+         <RecentProjects/> 
+         <Experience/>
+         {/* <Approach/> */}
+         <Footer/>
       </div>
     </main>
   )

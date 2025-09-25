@@ -22,11 +22,11 @@ const RecentProjects = () => {
                         <Image width={250} height={200} src='/bg.png' alt='bg-img'/>
                         </div> 
                         <Image
-                        height={250}
-                        width={200}
+                        height={350}
+                        width={400}
                         src={img}
                         alt={title}
-                        className='z-10 absolute bottom-0'
+                        className='z-10 absolute rotate-6 bottom-0'
                         />
                     </div>
                     <h1 className='font-bold md:text-xl lg:text-2xl text-base line-clamp-1'>

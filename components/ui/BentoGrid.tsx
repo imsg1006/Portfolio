@@ -12,6 +12,7 @@ import { useState } from "react";
 import animationData from '@/data/confetti.json';
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { IconDownload, IconEye, IconFile } from "@tabler/icons-react";
 
 export const BentoGrid = ({
   className,
@@ -100,9 +101,9 @@ export const BentoGridItem = ({
           </div>
         {id === 2 && <GlobeDemo/>}
         {id === 3 && (
-          <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-            <div className="flex flex-col font-bold gap-3 lg:gap-8">
-              {['React.js' , 'Next.js' , 'Typescript'].map
+          <div className="flex gap-4 p-2 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex flex-col font-bold mt-4   lg:gap-4">
+              {['React.js' , 'Next.js' ,'Python', 'Typescript'].map
               ((item) =>(
                 <span key={item} className="py-2 lg:py-4 lg:px-3 text-xs px-3 lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] ">
                   {item}
@@ -111,10 +112,10 @@ export const BentoGridItem = ({
               <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]">
               </span>
             </div>
-            <div className="flex flex-col gap-3 font-bold lg:gap-8">
+            <div className="flex m-2 flex-col gap-3 font-bold lg:gap-4">
             <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]">
               </span>
-              {['TailwindCss' , 'ShadcnUI' , 'MaterialUI'].map
+              {['TailwindCss', 'FastAPI' , 'ShadcnUI' , 'MaterialUI'].map
               ((item) =>(
                 <span key={item} className="py-2 lg:py-4 lg:px-3 text-xs px-3 lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] ">
                   {item}
@@ -153,15 +154,36 @@ export const BentoGridItem = ({
 )}
 { id === 7 && (
   <div className="flex flex-col items-center mt-4">
-    <a
-      href="/SHLOK_CV.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block px-6 py-2 mt-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
-      download
-    >
-        Resume
-    </a>
+    <div className="flex gap-3">
+      <a
+        href="/SHLOK_CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-4 py-2 text-white bg-transparent rounded-lg  transition duration-300 font-normal"
+      >
+        <MagicButton
+        
+      title={'View Resume'} icon={<IconEye/>}
+      position="left"
+      otherClasses="!bg-[#161a31]"/>
+        
+      </a>
+      <a
+        href="/SHLOK_CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-6 py-2  text-white bg-transparent rounded-lg transition duration-300 text-xs font-extrabold"
+        download
+      >
+        <MagicButton
+        
+      title={'Download Resume'}
+       icon={<IconDownload/>}
+      position="left"
+      otherClasses="!bg-[#161a31]"/>
+        
+      </a>
+    </div>
   </div>
 )}
         </div>
