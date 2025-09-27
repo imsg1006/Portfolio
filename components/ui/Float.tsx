@@ -4,13 +4,9 @@ import { FloatingDock } from "./floating-dock";
 import {
   IconBrandGithub,
   IconBrandLinkedin,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
-} from "@tabler/icons-react";
-import Image from "next/image";
+  IconBrandX, 
+  IconHome, 
+} from "@tabler/icons-react"; 
 
 export function FloatingDockDemo() {
   const links = [

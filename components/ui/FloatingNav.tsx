@@ -8,7 +8,7 @@ import {
    
 } from "motion/react";
 import { cn } from "@/utils/cn";
-import Link from "next/link"; 
+import Link from "next/link";  
 
 export const FloatingNav = ({
   navItems,
@@ -61,7 +61,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        {navItems.map((navItem: any , idx: number) => (
+        {navItems.map((navItem, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}

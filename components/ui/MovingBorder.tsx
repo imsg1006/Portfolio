@@ -9,6 +9,15 @@ import {
   useTransform,
 } from "motion/react";
 
+interface ButtonProps extends React.HTMLAttributes<HTMLElement> {
+  borderRadius?: string;
+  children: React.ReactNode;
+  as?: "button" | "a" | "div" | "span" | "section";
+  containerClassName?: string;
+  borderClassName?: string;
+  duration?: number;
+}
+
 export function Button({
   borderRadius = "1.75rem",
   children,
@@ -18,16 +27,7 @@ export function Button({
   duration,
   className,
   ...otherProps
-}: {
-  borderRadius?: string;
-  children: React.ReactNode;
-  as?: any;
-  containerClassName?: string;
-  borderClassName?: string;
-  duration?: number;
-  className?: string;
-  [key: string]: any;
-}) {
+}: ButtonProps) {
   return (
     <Component
       className={cn(
@@ -79,7 +79,7 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }) => {
   const pathRef = useRef<SVGPathElement | null>(null);
   const progress = useMotionValue<number>(0);
@@ -91,8 +91,6 @@ export const MovingBorder = ({
       progress.set((time * pxPerMillisecond) % length);
     }
   });
-
-  const pathLength = pathRef.current?.getTotalLength() ?? 0;
 
   const x = useTransform(progress, (val) =>
     pathRef.current?.getPointAtLength(val).x ?? 0

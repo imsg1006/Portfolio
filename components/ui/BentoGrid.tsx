@@ -12,7 +12,7 @@ import { useState } from "react";
 import animationData from '@/data/confetti.json';
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
-import { IconDownload, IconEye, IconFile } from "@tabler/icons-react";
+import { IconDownload, IconEye } from "@tabler/icons-react";
 
 export const BentoGrid = ({
   className,
@@ -40,8 +40,7 @@ export const BentoGridItem = ({
   id,
   img,
   imgClassName,
-  titleClassName,
-  spareImg,
+  titleClassName, 
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -101,21 +100,21 @@ export const BentoGridItem = ({
           </div>
         {id === 2 && <GlobeDemo/>}
         {id === 3 && (
-          <div className="flex gap-4 p-2 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-            <div className="flex flex-col font-bold mt-4   lg:gap-4">
+          <div className="flex sm:gap-1 p-2 lg:gap-5 h-fit w-fit absolute -right-2  lg:-right-2">
+            <div className="flex flex-col font-bold mt-6    lg:gap-4">
               {['React.js' , 'Next.js' ,'Python', 'Typescript'].map
               ((item) =>(
-                <span key={item} className="py-2 lg:py-4 lg:px-3 text-xs px-3 lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] ">
+                <span key={item} className="py-2 lg:py-4   lg:px-3 text-xs px-3 lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] ">
                   {item}
                 </span>
               ))}
               <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]">
               </span>
             </div>
-            <div className="flex m-2 flex-col gap-3 font-bold lg:gap-4">
-            <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]">
+            <div className="flex m-2 flex-col gap-1 mb-2 font-bold lg:gap-4">
+            <span className="py-4 px-3   rounded-lg text-center bg-[#10132E]">
               </span>
-              {['TailwindCss', 'FastAPI' , 'ShadcnUI' , 'MaterialUI'].map
+              {['TailwindCss', 'FastAPI' ,'PostgreSQL', 'ShadcnUI'  ].map
               ((item) =>(
                 <span key={item} className="py-2 lg:py-4 lg:px-3 text-xs px-3 lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] ">
                   {item}
