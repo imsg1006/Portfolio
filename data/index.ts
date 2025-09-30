@@ -68,7 +68,7 @@ export const navItems = [
   titleClassName: "justify-center",
   img: "",  
   spareImg: "",
-  resumeLink: "Resume.pdf", 
+  resumeLink: "/Resume.pdf", 
 },
   ];
   
