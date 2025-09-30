@@ -3,6 +3,7 @@ import React from "react";
 import { FloatingDock } from "./floating-dock";
 import {
   IconBrandGithub,
+  IconBrandGmail,
   IconBrandLinkedin,
   IconBrandX, 
   IconHome, 
@@ -42,6 +43,7 @@ export function FloatingDockDemo() {
       ),
       href: "https://github.com/imsg1006",
     },
+     
   ];
   return (
     <div className="flex items-center justify-center h-[20rem] w-full">

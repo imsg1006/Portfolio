@@ -68,7 +68,7 @@ export const navItems = [
   titleClassName: "justify-center",
   img: "",  
   spareImg: "",
-  resumeLink: "/SHLOK_CV",  
+  resumeLink: "/Shlok Resume.pdf", 
 },
   ];
   
@@ -101,9 +101,9 @@ export const navItems = [
       id: 4,
       title: "CricVista : The Tricolor of Cricketing Passion.",
       des: "CricVista brings fans closer to the Indian cricket team using GSAP and Aceternity UI.",
-      img: "/p4.svg",
+      img: "/cric.png",
       iconLists: ["/re.svg", "/tail.svg", "/js.jpg", "/aceter.png", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      link: "https://cric-vista.vercel.app/",
     },
   ];
   
