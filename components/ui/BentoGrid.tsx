@@ -155,7 +155,7 @@ export const BentoGridItem = ({
   <div className="flex flex-col items-center mt-4">
     <div className="flex gap-3">
       <a
-        href="/SHLOK_CV.pdf"
+        href="/Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block px-4 py-2 text-white bg-transparent rounded-lg  transition duration-300 font-normal"
@@ -168,7 +168,7 @@ export const BentoGridItem = ({
         
       </a>
       <a
-        href="/SHLOK_CV.pdf"
+        href="/Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block px-6 py-2  text-white bg-transparent rounded-lg transition duration-300 text-xs font-extrabold"
