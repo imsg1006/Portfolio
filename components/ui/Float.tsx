@@ -2,8 +2,7 @@
 import React from "react";
 import { FloatingDock } from "./floating-dock";
 import {
-  IconBrandGithub,
-  IconBrandGmail,
+  IconBrandGithub, 
   IconBrandLinkedin,
   IconBrandX, 
   IconHome, 
