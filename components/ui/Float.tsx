@@ -5,8 +5,7 @@ import {
   IconBrandGithub, 
   IconBrandLinkedin,
   IconBrandVercel,
-  IconBrandX, 
-  IconHome, 
+  IconBrandX,    
 } from "@tabler/icons-react"; 
 
 export function FloatingDockDemo() {
