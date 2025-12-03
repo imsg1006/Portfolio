@@ -102,13 +102,13 @@ export const BentoGridItem = ({
        { id === 3 && (
   <div className="w-full h-full flex flex-col justify-center p-6 lg:p-10">
 
-    {/* Title + description */}
+     
     <div className="mb-6">
       <p className="text-sm opacity-60">I constantly try to improve</p>
       <h2 className="text-3xl font-bold">My tech stack</h2>
     </div>
 
-    {/* Responsive chip grid */}
+    
     <div className="flex flex-wrap gap-3">
       {[
         "React.js", 

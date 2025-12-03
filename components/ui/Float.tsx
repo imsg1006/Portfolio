@@ -4,22 +4,15 @@ import { FloatingDock } from "./floating-dock";
 import {
   IconBrandGithub, 
   IconBrandLinkedin,
+  IconBrandVercel,
   IconBrandX, 
   IconHome, 
 } from "@tabler/icons-react"; 
 
 export function FloatingDockDemo() {
   const links = [
-    {
-      title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-
-     
-     
+    
+ 
     {
       title: "Linkdin",
       icon: (
@@ -42,7 +35,13 @@ export function FloatingDockDemo() {
       ),
       href: "https://github.com/imsg1006",
     },
-     
+     {
+      title: "Vercel",
+      icon: (
+        <IconBrandVercel className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://vercel.com/imsg1006s-projects",
+    },
   ];
   return (
     <div className="flex items-center justify-center h-[20rem] w-full">

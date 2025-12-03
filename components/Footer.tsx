@@ -1,5 +1,6 @@
 import React from 'react'
 import { FloatingDockDemo } from './ui/Float'
+import FooterCard from './FooterCard'
 
 const Footer = () => {
   return (
@@ -19,6 +20,7 @@ const Footer = () => {
 
         </>
         </div>
+        <FooterCard/>
      </main>
   )
 }

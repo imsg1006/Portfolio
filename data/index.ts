@@ -29,7 +29,7 @@ export const navItems = [
     },
     {
       id: 3,
-      title: " ",
+      title: "",
       description: "",
       className: "lg:col-span-1 md:col-span-2 lg:w-[90vh]  justify-center md:row-span-1",
       imgClassName: "",
