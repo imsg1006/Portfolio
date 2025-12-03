@@ -99,30 +99,47 @@ export const BentoGridItem = ({
             {title}
           </div>
         {id === 2 && <GlobeDemo/>}
-        {id === 3 && (
-          <div className="flex sm:gap-1 p-2 lg:gap-5 h-fit w-fit absolute -right-2  lg:-right-2">
-            <div className="flex flex-col font-bold mt-6    lg:gap-4">
-              {['React.js' , 'Next.js' ,'Python', 'Typescript'].map
-              ((item) =>(
-                <span key={item} className="py-2 lg:py-4   lg:px-3 text-xs px-3 lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] ">
-                  {item}
-                </span>
-              ))}
-              <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]">
-              </span>
-            </div>
-            <div className="flex m-2 flex-col gap-1 mb-2 font-bold lg:gap-4">
-            <span className="py-4 px-3   rounded-lg text-center bg-[#10132E]">
-              </span>
-              {['TailwindCss', 'FastAPI' ,'PostgreSQL', 'ShadcnUI'  ].map
-              ((item) =>(
-                <span key={item} className="py-2 lg:py-4 lg:px-3 text-xs px-3 lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] ">
-                  {item}
-                </span>
-              ))}
-             </div>
-          </div> 
-        )}
+       { id === 3 && (
+  <div className="w-full h-full flex flex-col justify-center p-6 lg:p-10">
+
+    {/* Title + description */}
+    <div className="mb-6">
+      <p className="text-sm opacity-60">I constantly try to improve</p>
+      <h2 className="text-3xl font-bold">My tech stack</h2>
+    </div>
+
+    {/* Responsive chip grid */}
+    <div className="flex flex-wrap gap-3">
+      {[
+        "React.js", 
+        "Next.js", 
+        "Python", 
+        "Typescript",
+        "TailwindCss",
+        "FastAPI",
+        "PostgreSQL",
+        "ShadcnUI"
+      ].map((item) => (
+        <span 
+          key={item}
+          className="
+            bg-[#10132E]
+            px-4 py-2
+            rounded-lg
+            text-xs sm:text-sm md:text-base
+            font-semibold
+            text-center
+            opacity-80 hover:opacity-100
+            transition
+          "
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+
+  </div>
+)}
 
         { id === 6 && (
   <div className="mt-5 relative">
