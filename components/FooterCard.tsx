@@ -5,7 +5,7 @@ export default function FooterCard() {
 
     {/* Brand */}
     <div>
-      <h2 className="text-3xl font-bold mb-4 text-white">Shlok's <span className="text-purple">Portfolio</span></h2>
+      <h2 className="text-3xl font-bold mb-4 text-white">Shlok &apos;s <span className="text-purple">Portfolio</span></h2>
       <p className="leading-relaxed text-gray-400">
         Building responsive, modern web apps with clean UI and elegant code.
       </p>
