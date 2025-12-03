@@ -5,10 +5,9 @@ import {
   AnimatePresence,
   useScroll,
   useMotionValueEvent,
-   
 } from "motion/react";
 import { cn } from "@/utils/cn";
-import Link from "next/link";  
+import Link from "next/link"; 
 
 export const FloatingNav = ({
   navItems,
@@ -22,13 +21,11 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
-
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(false); 
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      const direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
@@ -43,37 +40,44 @@ export const FloatingNav = ({
   });
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        initial={{
-          opacity: 1,
-          y: -100,
-        }}
-        animate={{
-          y: visible ? 0 : -100,
-          opacity: visible ? 1 : 0,
-        }}
-        transition={{
-          duration: 0.2,
-        }}
-        className={cn(
-    "fixed top-10 inset-x-0 mx-auto z-[5000] flex max-w-fit items-center justify-center  space-x-4 px-10 py-4 rounded-2xl border border-white/15  bg-black/40 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.25)]",
-    className
-        )}
-      >
-        {navItems.map((navItem, idx: number) => (
-          <Link
-            key={`link=${idx}`}
-            href={navItem.link}
-            className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-            )}
-          >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
-          </Link>
-        ))}
-         </motion.div>
-    </AnimatePresence>
+    <>
+      {/* Desktop */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          initial={{
+            opacity: 1,
+            y: -100,
+          }}
+          animate={{
+            y: visible ? 0 : -100,
+            opacity: visible ? 1 : 0,
+          }}
+          transition={{
+            duration: 0.2,
+          }}
+          className={cn(
+            "hidden md:flex fixed top-10 inset-x-0 mx-auto z-[5000] max-w-fit items-center justify-center space-x-4 px-10 py-4 rounded-2xl border border-white/15 bg-black/40 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.25)]",
+            className
+          )}
+        >
+          {navItems.map((navItem, idx: number) => (
+            <Link
+              key={`link=${idx}`}
+              href={navItem.link}
+              className={cn(
+                "relative dark:text-neutral-50 flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              )}
+            >
+              <span className="hidden sm:block text-sm">
+                {navItem.name}
+              </span>
+            </Link>
+          ))}
+        </motion.div>
+      </AnimatePresence>
+
+      
+     
+    </>
   );
 };

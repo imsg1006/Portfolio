@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { cn } from "@/lib/utils";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
@@ -9,7 +9,6 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
-
 import { useRef, useState } from "react";
 
 export const FloatingDock = ({
@@ -43,7 +42,7 @@ const FloatingDockMobile = ({
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute inset-x-0 bottom-full mb-2 flex flex-col gap-2"
+            className="absolute inset-x-0 bottom-full mb-2 flex flex-col gap-2 bg-black/60 backdrop-blur-md border border-white/20 rounded-xl p-3"
           >
             {items.map((item, idx) => (
               <motion.div
@@ -98,7 +97,7 @@ const FloatingDockDesktop = ({
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
         "mx-auto hidden h-16 items-end gap-4 rounded-2xl bg-gray-50 px-4 pb-3 md:flex dark:bg-neutral-900",
-        className,
+        className
       )}
     >
       {items.map((item) => (
@@ -120,22 +119,15 @@ function IconContainer({
   href: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-
   const distance = useTransform(mouseX, (val) => {
     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
-
     return val - bounds.x - bounds.width / 2;
   });
 
   const widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
   const heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-
   const widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
-  const heightTransformIcon = useTransform(
-    distance,
-    [-150, 0, 150],
-    [20, 40, 20],
-  );
+  const heightTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
 
   const width = useSpring(widthTransform, {
     mass: 0.1,
