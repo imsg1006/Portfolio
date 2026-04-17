@@ -1,159 +1,158 @@
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Experience", link: "#experience" },
-    { name: "Contact", link: "#footer" },
-  ];
-  
-  export const gridItems = [
-    {
-      id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
-      className: "lg:col-span-2 md:col-span-6 md:row-span-1 lg:min-h-[40vh]",
-      imgClassName: "w-[115vh] h-[40vh]",
-      titleClassName: "justify-end",
-      img: "/b1.svg",
-      
-      spareImg: "",
-    },
-    {
-      id: 2,
-      title: "I'm very flexible with time zone communications",
-      description: "",
-      className: "lg:col-span-1 md:col-span-2 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "",
-      spareImg: "",
-    },
-    {
-      id: 3,
-      title: "",
-      description: "",
-      className: "lg:col-span-1 md:col-span-2 lg:w-[90vh]  justify-center md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-center",
-      img: "",
-      spareImg: "",
-    },
-    {
-      id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "",
-      className: " flex flex-col w-[35vw]  justify-between lg:ml-60  items-end h-full  ",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
-    },
-  
-     
-    {
-      id: 6,
-      title: "Do you want to start a project together?",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "",
-      spareImg: "",
-    },
-    {
-  id: 7,
-  title: "View My Resume",
-  description: "Download or view my latest resume.",
-  className: "flex flex-col lg:col-span-1 md:col-span-2 md:row-span-1 justify-between  items-center h-full",
-  imgClassName: "",
-  titleClassName: "justify-center",
-  img: "",  
-  spareImg: "",
-  resumeLink: "/Resume.pdf", 
-},
-  ];
-  
-  export const projects = [
-    {
-      id: 1,
-      title: "Findly : Image & WebSearch powered by MCP",
-      des: "A smart search platform that generates web results and images using MCP servers.",
-      img: "/findly.png",
-      iconLists: ["/re.svg","/mcp.png", "/tail.svg", "/python.png",   "/fastapi.jpg", "/aceter.png"],
-      link: "https://findly-10.onrender.com/",
-    },
-    {
-      id: 2,
-      title: "FastTales : An AI-powered story generator that creates engaging tales based on chosen themes.",
-      des: "An AI-powered story generator that creates engaging tales based on chosen themes.",
-      img: "/fasttales.png",
-      iconLists: ["/re.svg", "/tail.svg",  "/js.jpg", "/python.png",   "/fastapi.jpg", "/aceter.png", "/gem.jpg"],
-      link: "https://2490bbb6-8215-4fd2-833b-671300f9c390.e1-us-east-azure.choreoapps.dev//",
-    },
-    {
-      id: 3,
-      title: " AuraFix : An image enhancer AI tool",
-      des: "An AI tool designed to enhance and improve image quality.",
-      img: "/aurafix.png",
-      iconLists: ["/re.svg", "/tail.svg", "/js.jpg", "/aceter.png", "/pw.png"],
-      link: "https://aura-fix.vercel.app/",
-    },
-    {
-      id: 4,
-      title: "CricVista : The Tricolor of Cricketing Passion.",
-      des: "CricVista brings fans closer to the Indian cricket team using GSAP and Aceternity UI.",
-      img: "/cric.png",
-      iconLists: ["/re.svg", "/tail.svg", "/js.jpg", "/aceter.png", "/gsap.svg"],
-      link: "https://cric-vista.vercel.app/",
-    },
-  ];
-  
-   
-  
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
-  
-  export const workExperience = [
-    {
-      id: 1,
-      company:'ReelKart',
-      date:"November 2023 - March 2024",
-      title: "Frontend Engineer Intern",
-      desc: "Worked as a Frontend Developer Intern, building responsive and interactive user interfaces using React.js and TailwindCSS.",
-      desc2:"Contributed to the development and management of dashboards, ensuring smooth data visualization and user-friendly navigation.",
-      desc3:"Collaborated with the team to improve UI/UX, optimize performance, and streamline workflows for better user experience.",
-      className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
-    } 
-  ];
-  
-  
+  { name: "About", link: "#about" },
+  { name: "Projects", link: "#projects" },
+  { name: "Experience", link: "#experience" },
+  { name: "Contact", link: "#footer" },
+];
+
+export const gridItems = [
+  {
+    id: 1,
+    title: "I prioritize client collaboration, fostering open communication ",
+    description: "",
+    className: "lg:col-span-2 md:col-span-6 md:row-span-1 lg:min-h-[40vh]",
+    imgClassName: "w-[115vh] h-[40vh]",
+    titleClassName: "justify-end",
+    img: "/b1.svg",
+
+    spareImg: "",
+  },
+  {
+    id: 2,
+    title: "I'm very flexible with time zone communications",
+    description: "",
+    className: "lg:col-span-1 md:col-span-2 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 3,
+    title: "",
+    description: "",
+    className: "lg:col-span-1 md:col-span-2 lg:w-[90vh]  justify-center md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 4,
+    title: "Tech enthusiast with a passion for development.",
+    description: "",
+    className: " flex flex-col w-[35vw]  justify-between lg:ml-60  items-end h-full  ",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "/grid.svg",
+    spareImg: "/b4.svg",
+  },
+
+
+  {
+    id: 6,
+    title: "Do you want to start a project together?",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 7,
+    title: "View My Resume",
+    description: "Download or view my latest resume.",
+    className: "flex flex-col lg:col-span-1 md:col-span-2 md:row-span-1 justify-between  items-center h-full",
+    imgClassName: "",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+    resumeLink: "/Shlok_Gupta_Resume.pdf",
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Findly : Image & WebSearch powered by MCP",
+    des: "A smart search platform that generates web results and images using MCP servers.",
+    img: "/findly.png",
+    iconLists: ["/re.svg", "/mcp.png", "/tail.svg", "/python.png", "/fastapi.jpg", "/aceter.png"],
+    link: "https://findly-10.onrender.com/",
+  },
+  {
+    id: 2,
+    title: "FastTales : An AI-powered story generator that creates engaging tales based on chosen themes.",
+    des: "An AI-powered story generator that creates engaging tales based on chosen themes.",
+    img: "/fasttales.png",
+    iconLists: ["/re.svg", "/tail.svg", "/js.jpg", "/python.png", "/fastapi.jpg", "/aceter.png", "/gem.jpg"],
+    link: "https://2490bbb6-8215-4fd2-833b-671300f9c390.e1-us-east-azure.choreoapps.dev//",
+  },
+  {
+    id: 3,
+    title: "Doctro : Seamless healthcare scheduling.",
+    des: " A medical scheduling platform for patients to filter/book slots and doctors to manage availability.",
+    img: "/doctro.png",
+    iconLists: ["/re.svg", "/tail.svg", "/js.jpg", "/python.png", "/fastapi.jpg", "/aceter.png"],
+    link: "https://doctro.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Chronos : Crafting Time Through Immersive 3D Web Experiences",
+    des: "A showcase website for watches using 3d animations.",
+    img: "/chronos.png",
+    iconLists: ["/re.svg", "/tail.svg", "/js.jpg", "/three.png", "/gsap.svg"],
+    link: "https://chronos-roan-two.vercel.app/",
+  },
+];
+
+
+
+export const companies = [
+  {
+    id: 1,
+    name: "cloudinary",
+    img: "/cloud.svg",
+    nameImg: "/cloudName.svg",
+  },
+  {
+    id: 2,
+    name: "appwrite",
+    img: "/app.svg",
+    nameImg: "/appName.svg",
+  },
+  {
+    id: 3,
+    name: "HOSTINGER",
+    img: "/host.svg",
+    nameImg: "/hostName.svg",
+  },
+  {
+    id: 4,
+    name: "stream",
+    img: "/s.svg",
+    nameImg: "/streamName.svg",
+  },
+  {
+    id: 5,
+    name: "docker.",
+    img: "/dock.svg",
+    nameImg: "/dockerName.svg",
+  },
+];
+
+export const workExperience = [
+  {
+    id: 1,
+    company: 'ReelKart',
+    date: "November 2023 - March 2024",
+    title: "Frontend Engineer Intern",
+    desc: "Worked as a Frontend Developer Intern, building responsive and interactive user interfaces using React.js and TailwindCSS.",
+    desc2: "Contributed to the development and management of dashboards, ensuring smooth data visualization and user-friendly navigation.",
+    desc3: "Collaborated with the team to improve UI/UX, optimize performance, and streamline workflows for better user experience.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  }
+];
+
