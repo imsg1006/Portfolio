@@ -92,7 +92,7 @@ export const projects = [
   {
     id: 3,
     title: "Doctro : Seamless healthcare scheduling.",
-    des: " A medical scheduling platform for patients to filter/book slots and doctors to manage availability.",
+    des: " A medical scheduling platform for patients to book slots and doctors to manage availability.",
     img: "/doctro.png",
     iconLists: ["/re.svg", "/tail.svg", "/js.jpg", "/python.png", "/fastapi.jpg"],
     link: "https://doctro.vercel.app/",
