@@ -12,13 +12,13 @@ const Experience = () => {
       </h1>
 
       {/* Responsive grid */}
-      <div className="w-full mt-12 grid gap-6 sm:gap-8 md:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="w-full mt-12 flex flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-10">
         {workExperience.map((card) => (
           <Button
             key={card.id}
             className="flex-1 text-white border-neutral-200 dark:border-slate-800"
           >
-            <div className="flex flex-col lg:flex-row w-full h-full items-start lg:items-center p-4 sm:p-6 md:p-8 gap-4">
+            <div className="flex flex-col lg:flex-row w-full h-auto items-start lg:items-center p-4 sm:p-6 md:p-8 gap-4">
               {/* Logo */}
               <div className="relative w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 mx-auto lg:mx-0">
                 <Image
@@ -26,6 +26,7 @@ const Experience = () => {
                   fill
                   alt={card.company}
                   className="object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
 

@@ -19,14 +19,14 @@ const RecentProjects = () => {
                     <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw]
                     overflow-hidden h-[30vh] sm:h-[40vh] mb-10'>
                        <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
-                        <Image width={250} height={200} src='/bg.png' alt='bg-img'/>
+                        <Image src='/bg.png' alt='bg-img' fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         </div> 
                         <Image
                         height={350}
                         width={400}
                         src={img}
                         alt={title}
-                        className='z-10 absolute rotate-6 bottom-0'
+                        className='z-10 absolute rotate-6 bottom-0 w-full h-auto'
                         />
                     </div>
                     <h1 className='font-bold md:text-xl lg:text-2xl text-base line-clamp-1'>
@@ -43,8 +43,8 @@ const RecentProjects = () => {
                                 style={{
                                     transform:`translate(-${5 * index * 2}px)`
                                 }}>
-                                    <Image width={40}  height={20} src={icon} alt={icon}
-                                    className='p-2'/>
+                                    <Image width={40} height={40} src={icon} alt={icon}
+                                    className='p-2 w-full h-auto' />
                                 </div>  
                             ))}
                             </div>  

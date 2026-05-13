@@ -22,9 +22,17 @@ const Hero = () => {
       <div className='justify-center flex relative my-20 z-10'>
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
 
+          <div className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+            Available for new opportunities
+          </div>
+
           <TextGenerateEffect
             className='text-center text-[40px] md:text-5xl lg:text-6xl'
             words='Transforming Ideas into Interactive Web Solutions' />
+          
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl font-semibold text-purple">
+            Crafting seamless digital experiences with modern tech.
+          </p>
 
           <p className=' mt-4 text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
             Hi, I&apos;m Shlok , a Full-Stack Developer based in India.

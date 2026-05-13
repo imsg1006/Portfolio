@@ -68,7 +68,7 @@ export const gridItems = [
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
-    resumeLink: "/Shlok_Gupta_Resume.pdf",
+    resumeLink: "/shlok_gupta_cv.pdf",
   },
 ];
 
