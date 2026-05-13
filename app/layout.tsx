@@ -5,6 +5,9 @@ import { ThemeProvider } from "./provider";
 export const metadata: Metadata = {
   title: "Shlok's Portfolio",
   description: "Modern and Minimalist JS Portfolio ",
+  icons: {
+    icon: '/logo.jpg',
+  },
 };
 
 export default function RootLayout({
